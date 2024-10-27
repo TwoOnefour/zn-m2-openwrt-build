@@ -20,7 +20,7 @@ permissions:
   actions: write
 
 env:
-  REPO_URL: https://github.com/LiBwrt-op/openwrt-6.x
+  REPO_URL: https://github.com/TwoOnefour/openwrt-6.x
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/zn-m2.config
