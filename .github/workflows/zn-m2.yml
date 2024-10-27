@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/TwoOnefour/openwrt-6.x
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./config/zn-m2.config
+  CONFIG_FILE: ./config/zn-m2-full.config
   DIY_P1_SH: ./scripts/zn-m2/diy-part1.sh
   DIY_P2_SH: ./scripts/zn-m2/diy-part2.sh
   DIY_P3_SH: ./scripts/zn-m2/diy-part3.sh
