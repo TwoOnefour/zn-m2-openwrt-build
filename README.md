@@ -11,7 +11,7 @@ linux内核为6.6，原仓库请见workflow文件
 
 # 展示固件
 
-此为passwall+adguardhome+smartdns+zerotier四个插件一起运行的内存占用，没有超过512M，推荐512MB以上的zn-m2使用。
+此为passwall+adguardhome+smartdns+zerotier四个插件一起运行的内存占用，占用300MB的内存。推荐512MB以上的zn-m2使用。
 
 ![pic](./pic/01.jpg)
 
