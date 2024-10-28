@@ -8,3 +8,4 @@ linux内核为6.6，原仓库请见workflow文件
 - luci-app-passwall
 - adguardhome
 - luci-app-smartdns
+![pic](./pic/01.jpg)
