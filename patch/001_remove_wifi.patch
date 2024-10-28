@@ -12,20 +12,22 @@ index edc91030bd..f6d63081e5 100644
  #src-git targets https://github.com/openwrt/targets.git
  #src-git oldpackages http://git.openwrt.org/packages.git
 diff --git a/target/linux/qualcommax/Makefile b/target/linux/qualcommax/Makefile
-index dc7c8305c2..719a47a4d1 100644
+index dc7c8305c2..97e9d3f619 100644
 --- a/target/linux/qualcommax/Makefile
 +++ b/target/linux/qualcommax/Makefile
-@@ -12,9 +12,8 @@ KERNEL_PATCHVER:=6.6
+@@ -12,10 +12,9 @@ KERNEL_PATCHVER:=6.6
  
  include $(INCLUDE_DIR)/target.mk
  DEFAULT_PACKAGES += \
 -	kmod-usb3 kmod-usb-dwc3 kmod-usb-dwc3-qcom \
  	kmod-leds-gpio kmod-gpio-button-hotplug \
 -	kmod-qca-nss-dp kmod-ath11k-ahb \
+-	wpad-openssl uboot-envtools \
 +	kmod-qca-nss-dp \
- 	wpad-openssl uboot-envtools \
++        uboot-envtools \
  	e2fsprogs kmod-fs-ext4 losetup autocore cpufreq
  
+ $(eval $(call BuildTarget))
 diff --git a/target/linux/qualcommax/ipq60xx/target.mk b/target/linux/qualcommax/ipq60xx/target.mk
 index dea833d3fe..2238da85b6 100644
 --- a/target/linux/qualcommax/ipq60xx/target.mk
