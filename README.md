@@ -7,3 +7,4 @@ linux内核为6.6，原仓库请见workflow文件
 - zerotier
 - passwall(只有xray)
 - adguardhome
+- smartdns
