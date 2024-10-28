@@ -43,16 +43,16 @@ jobs:
       run: |
         sudo apt-get update
         
-    - name: Free Disk Space
-      uses: jlumbroso/free-disk-space@main
-      with:
-        tool-cache: true
-        android: true
-        dotnet: true
-        haskell: true
-        large-packages: true
-        docker-images: true
-        swap-storage: true
+    # - name: Free Disk Space
+    #   uses: jlumbroso/free-disk-space@main
+    #   with:
+    #     tool-cache: true
+    #     android: true
+    #     dotnet: true
+    #     haskell: true
+    #     large-packages: true
+    #     docker-images: true
+    #     swap-storage: true
 
     - name: Checkout
       uses: actions/checkout@main
@@ -110,11 +110,12 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P3_SH
         
-    - name: Load custom configuration
+    - name: Apply Patch for removing usb and wifi support 
       run: |
         set -x
         cd openwrt
         patch -p001 < $GITHUB_WORKSPACE/patch/001_remove_wifi.patch
+        
     - name: Download package
       id: package
       run: |
