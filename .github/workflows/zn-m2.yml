@@ -109,7 +109,12 @@ jobs:
         chmod +x $DIY_P3_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P3_SH
-
+        
+    - name: Load custom configuration
+      run: |
+        set -x
+        cd openwrt
+        patch -p001 < $GITHUB_WORKSPACE/patch/001_remove_wifi.patch
     - name: Download package
       id: package
       run: |
