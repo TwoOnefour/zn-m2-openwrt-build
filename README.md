@@ -8,7 +8,7 @@ linux内核为6.6，原仓库请见workflow文件
 - luci-app-passwall
 - adguardhome
 - luci-app-smartdns
-
+- luci-app-qos
 # 展示固件
 
 此为passwall(chinadns_ng)+adguardhome+smartdns+zerotier四个插件一起运行的内存占用，占用300MB的内存。推荐512MB以上的zn-m2使用。
